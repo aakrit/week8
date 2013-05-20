@@ -25,9 +25,9 @@ ActiveRecord::Schema.define(:version => 20130221012525) do
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "password_digest"
-    t.integer  "miles_earned"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.integer  "miles_earned",    :default => 0
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
   end
 
 end
